@@ -1,0 +1,112 @@
+/* Cost Comparison Section Styles */
+.cost-savings-highlight {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cost-savings-highlight h3 {
+  font-size: 1.8rem;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.cost-savings-highlight p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--light-gray);
+}
+
+.cost-comparison-table-container {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  background-color: var(--white);
+}
+
+.cost-comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cost-comparison-table th {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 2px solid var(--border-color);
+  color: var(--dark-gray);
+  font-size: 1.2rem;
+}
+
+.cost-comparison-table th.in-house {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.cost-comparison-table th.outsourced {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.cost-comparison-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cost-comparison-table td.in-house {
+  text-align: center;
+  font-weight: 500;
+  color: var(--blue);
+}
+
+.cost-comparison-table td.outsourced {
+  text-align: center;
+  font-weight: 500;
+  color: var(--orange);
+}
+
+.cost-comparison-table .total-row {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.cost-comparison-table .total-row td {
+  border-bottom: 2px solid var(--border-color);
+}
+
+.table-footnote {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--light-gray);
+  font-style: italic;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .cost-comparison-table-container {
+    padding: 15px;
+  }
+  
+  .cost-comparison-table th,
+  .cost-comparison-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .cost-comparison-table .total-row {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .cost-comparison-table th,
+  .cost-comparison-table td {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+  
+  .cost-savings-highlight h3 {
+    font-size: 1.5rem;
+  }
+}
